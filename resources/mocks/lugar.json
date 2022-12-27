@@ -1,0 +1,38 @@
+[
+  {
+    "_id": "62e18b90201ad75e220ee703",
+    "id": "1",
+    "codigosap": "1",
+    "codigotruck": "1",
+    "tipo": "planta",
+    "provinciaid": "1",
+    "localidadid": "1",
+    "name": "Planta Corrientes",
+    "direccion": "Av. Juan de Garay 340",
+    "regionid": "1",
+    "recibede": [
+      "1",
+      "15"
+    ],
+    "zt": "AR040001P1",
+    "enabled": true
+  },
+  {
+    "_id": "62e18b91201ad75e220ee744",
+    "id": "15",
+    "codigosap": "15",
+    "codigotruck": "15",
+    "tipo": "deposito",
+    "provinciaid": "1",
+    "localidadid": "1",
+    "name": "Subdep Tucumán",
+    "direccion": "Ruta 302 Km 6,5",
+    "regionid": "1",
+    "recibede": [
+      "1",
+      "15"
+    ],
+    "zt": "AR90NOAS05",
+    "enabled": true
+  }
+]

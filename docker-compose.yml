@@ -1,0 +1,10 @@
+version: '3.5'
+services: 
+  shopapi:
+    image: shopapi
+    container_name: shopapi
+    restart: always
+    ports:
+    - 8093:8093
+    environment:
+    - PORT=8093

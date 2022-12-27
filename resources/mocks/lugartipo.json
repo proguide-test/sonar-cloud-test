@@ -1,0 +1,44 @@
+[
+  {
+    "_id": "62cc5f2f9db30874c601920d",
+    "id": "planta",
+    "name": "Planta",
+    "abreviatura": "PTA",
+    "enabled": true
+  },
+  {
+    "_id": "62cc5f2f9db30874c6019213",
+    "id": "deposito",
+    "name": "Deposito",
+    "abreviatura": "DEP",
+    "enabled": true
+  },
+  {
+    "_id": "62cc5f2f9db30874c6019216",
+    "id": "puntoventa",
+    "name": "Punto de venta",
+    "abreviatura": "PDV",
+    "enabled": true
+  },
+  {
+    "_id": "62cc5f2f9db30874c6019210",
+    "id": "centro",
+    "name": "Centro",
+    "abreviatura": "CD",
+    "enabled": true
+  },
+  {
+    "_id": "62cc5f2f9db30874c601921c",
+    "id": "directa",
+    "name": "Directa",
+    "abreviatura": "DIR",
+    "enabled": true
+  },
+  {
+    "_id": "62cc5f2f9db30874c6019219",
+    "id": "distribuidor",
+    "name": "Distribuidor",
+    "abreviatura": "DIST",
+    "enabled": true
+  }
+]

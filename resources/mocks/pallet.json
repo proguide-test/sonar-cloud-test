@@ -1,0 +1,70 @@
+[
+  {
+    "_id": "62bc61d3c971dcb3da94c103",
+    "productos": [
+      {
+        "cantidad": 1,
+        "ordentransporteid": "62bb6d16c971dcb3da93049b",
+        "productoid": "623c83af52c0a7002e5f76cb"
+      }
+    ],
+    "origenid": "1",
+    "destinoid": "15",
+    "estado": "despachado",
+    "numberid": "1",
+    "createdAt": "2022-06-29 11:29:39",
+    "updatedAt": "2022-08-17 11:26:24",
+    "__v": 0,
+    "nroplanilladespacho": "",
+    "id": "62bc61d3c971dcb3da94c103"
+  },  
+  {
+    "_id": "62bb6cc5c971dcb3da930249",
+    "productos": [
+      {
+        "cantidad": 10,
+        "ordentransporteid": "62bb6d16c971dcb3da93049b",
+        "productoid": "623c83af52c0a7002e5f76cd"
+      },
+      {
+        "cantidad": 5,
+        "ordentransporteid": "62bb6d16c971dcb3da93049b",
+        "productoid": "623c83af52c0a7002e5f76cb"
+      }
+    ],
+    "origenid": "1",
+    "destinoid": "15",
+    "estado": "generado",
+    "numberid": "2",
+    "createdAt": "2022-06-28 18:04:05",
+    "updatedAt": "2022-08-17 11:26:18",
+    "__v": 0,
+    "nroplanilladespacho": "1",
+    "id": "62bb6cc5c971dcb3da930249"
+  },  
+  {
+    "_id": "none",
+    "productos": [
+      {
+        "cantidad": 10,
+        "ordentransporteid": "62bb6d16c971dcb3da93049b",
+        "productoid": "623c83af52c0a7002e5f76cd"
+      },
+      {
+        "cantidad": 5,
+        "ordentransporteid": "62bb6d16c971dcb3da93049b",
+        "productoid": "623c83af52c0a7002e5f76cb"
+      }
+    ],
+    "origenid": "1",
+    "destinoid": "15",
+    "estado": "generado",
+    "numberid": "2",
+    "createdAt": "2022-06-28 18:04:05",
+    "updatedAt": "2022-08-17 11:26:18",
+    "__v": 0,
+    "nroplanilladespacho": "1",
+    "nroplanillarecepcion": "1",
+    "id": "none"
+  }
+]

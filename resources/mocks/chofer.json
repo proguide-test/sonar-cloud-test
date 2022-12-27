@@ -1,0 +1,72 @@
+[
+  {
+    "_id": "62cdb83a9db30874c6122270",
+    "id": "1",
+    "dni": "38443218",
+    "nombre": "Matias",
+    "apellido": "Vazquez"
+  },
+  {
+    "_id": "62cdb83a9db30874c6122252",
+    "id": "2",
+    "dni": "23445239",
+    "nombre": "Daniel",
+    "apellido": "Schvoumaker"
+  },
+  {
+    "_id": "62cdb83a9db30874c6122285",
+    "id": "23",
+    "dni": "29645561",
+    "nombre": "Diego",
+    "apellido": "Garnica"
+  },
+  {
+    "_id": "62cdb83a9db30874c61222ac",
+    "id": "36",
+    "dni": "33790996",
+    "nombre": "Fabio",
+    "apellido": "Godoy"
+  },
+  {
+    "_id": "62cdb83a9db30874c61222b5",
+    "id": "39",
+    "dni": "16983492",
+    "nombre": "Nestor",
+    "apellido": "Pardo"
+  },
+  {
+    "_id": "62cdb83a9db30874c61222f1",
+    "id": "59",
+    "dni": "28561343",
+    "nombre": "Jose",
+    "apellido": "Velozo"
+  },
+  {
+    "_id": "62cdb83a9db30874c61222fa",
+    "id": "62",
+    "dni": "32889034",
+    "nombre": "Eduardo",
+    "apellido": "Orellana"
+  },
+  {
+    "_id": "62cdb83a9db30874c612231b",
+    "id": "73",
+    "dni": "34105191",
+    "nombre": "Gustavo",
+    "apellido": "Gimenez"
+  },
+  {
+    "_id": "62cdb83a9db30874c612234e",
+    "id": "90",
+    "dni": "26732921",
+    "nombre": "Eduardo",
+    "apellido": "Arce"
+  },
+  {
+    "_id": "62cdb83a9db30874c612235d",
+    "id": "95",
+    "dni": "17448009",
+    "nombre": "Sergio",
+    "apellido": "Ruiz"
+  }
+]

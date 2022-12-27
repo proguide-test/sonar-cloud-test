@@ -1,0 +1,43 @@
+[
+  {
+    "_id": "62c2fbe7c971dcb3da9fcbc2",
+    "idvehiculo": "1",
+    "idchofer": "1",
+    "idoperador": "1",
+    "pallets": [
+      "62bb6cc5c971dcb3da930249"
+    ],
+    "usuario": "mborgo",
+    "estado": "despachada",
+    "origenid": "1",
+    "numberid": "29",
+    "createdAt": "2022-07-04 11:40:39",
+    "updatedAt": "2022-07-11 12:30:42",
+    "__v": 0,
+    "fechadespacho": "2022-07-04 11:41:12.761",
+    "fechacierre": "2022-07-04 11:49:24.583",
+    "id": "62c2fbe7c971dcb3da9fcbc2"
+  },
+  {
+    "_id": "62bcb82bc971dcb3da96005a",
+    "idvehiculo": "1",
+    "idchofer": "1",
+    "idoperador": "1",
+    "pallets": [
+      "62bc61d3c971dcb3da94c103"
+    ],
+    "recepciones": [
+      "62bcb837c971dcb3da9600b7"
+    ],
+    "usuario": "mborgo",
+    "estado": "cerrada",
+    "origenid": "1",
+    "numberid": "17",
+    "createdAt": "2022-06-29 17:38:03",
+    "updatedAt": "2022-07-27 10:45:00",
+    "__v": 0,
+    "fechadespacho": "2022-06-29 17:38:14.056",
+    "fechacierre": "2022-07-27 13:44:59.563",
+    "id": "62bcb82bc971dcb3da96005a"
+  }
+]

@@ -1,0 +1,220 @@
+<html>
+	<head>
+		<link href='https://fonts.googleapis.com/css?family=Helvetica' rel='stylesheet' type='text/css'>
+	
+		<style type = "text/css">
+			body {
+				font-family: Arial, Helvetica, sans-serif;
+			}
+			
+			.container {
+				margin: 10px;
+			}
+
+			.header {
+				border: 4px solid #365CDF;
+				border-radius: 10px;
+				margin-bottom: 10px;
+			}
+
+			.header-logo {
+				padding: 10px;
+				width: 80px;
+				height: auto;
+				align-self: center;
+			}
+
+			.header-data {
+				padding: 0px 10px;
+				width: 100%;
+			}
+
+			.header-title {
+				padding-right: 10px;
+				color: #365CDF;
+				font-size: 70px;
+				width: 100%;
+			}
+					
+			.header-label {
+				position: relative;
+				font-size: 14px;
+			}
+			
+			.body-container {
+				width: 100%;
+			}
+
+			.table-header {
+				border-radius: 10px !important;
+				border: 4px solid #365CDF;
+				background-color: #5070e2;
+				color: white;
+				display: -webkit-box;
+			}
+			.color {
+				background-color: #5070e2;
+				color: white;
+			}
+			
+			.table-body {
+				border-radius: 10px !important;
+				border: 4px solid #365CDF;
+				margin-top: 10px;
+			}
+
+			.table-row {
+				display: -webkit-box;
+				max-width: 100%;
+				border-bottom: 1px solid #e7e4e4;
+			}
+
+			.table-row-footer {
+				display: -webkit-box;
+				max-width: 100%;				
+			}
+			
+			.table-col {
+				padding-top: 10px;
+				font-size: 18px;
+				word-wrap: break-word;
+			}
+
+			.table-border {
+				border-left: 1px solid #e7e4e4;
+				border-right: 1px solid #e7e4e4;
+			}
+			.table-border-left {
+				border-left: 1px solid #e7e4e4;
+			}
+
+			.table-col-number {
+				max-width: 140px !important;
+				min-width: 140px !important;
+			}
+			.table-col-item {
+				min-width: 60px !important;
+				max-width: 60px !important;
+				text-align: center;
+			}
+			.table-col-name {
+				max-width: 550px !important;
+				min-width: 550px !important;
+			}
+			.table-col-count {
+				min-width: 100px !important;
+				max-width: 100px !important;
+				text-align: center;
+			}			
+
+			.title-col-1 {
+				width: 80px;
+				font-weight: 900;
+			}
+
+			.padding-destino {
+				padding-top: 5px;
+			}
+
+			.destino {
+				border-radius: 10px;
+				background-color: #F9C5C2;
+				margin-right: 5px;
+				padding: 1px 10px 0px 10px;
+			}
+			
+			.info > thead > tr {
+				display: block;			
+			}
+
+			.table-value {
+				position: absolute;
+				top: 1px;
+				left: 0px;
+				width: 500px;
+			}
+
+			.font-destino {
+				position: relative;				
+				font-size: 22px;				
+			} 
+		</style>
+	</head>	
+	<body>
+		<div class="container">			
+			<div class="header">
+				<table>	
+					<thead>
+					<tr>
+						<td class="header-logo">
+							<img src="./logo.png" alt=" "/>
+						</td>
+						<td class="header-data">
+							<table>	
+								<thead>
+								<tr>
+									<td>
+										<div class="header-title">
+											PALLET N&#176; [numero]
+										</div>
+									</td>
+								</tr>
+								</thead>
+							</table>
+							<table class="info">
+								<thead>
+									<tr>
+										<td class="font-destino title-col-1 padding-destino">
+											Destino:
+										</td>
+										<td class="font-destino destino">
+											[destino]
+										</td>
+									</tr>
+									<tr>
+										<td class="header-label title-col-1">
+											Direcci&oacute;n:
+										</td>
+										<td class="header-label">
+											<div class="table-value">
+												[direccion]
+											</div>
+										</td>
+									</tr>
+								</thead>
+							</table>
+						</td>
+					</tr>
+					</thead>
+				</table>
+			</div>
+
+			<div class="body-container">
+
+				<div class="table-header">
+					<div class="color table-col table-col-item">Item</div>
+					<div class="color table-col table-col-number">&nbsp;N&#176; OE</div>
+					<div class="color table-col table-col-name">&nbsp;Material</div>
+					<div class="color table-col table-col-count">Cant</div>
+				</div>
+				
+				<div class="table-body">
+					<!-- BEGIN PRODUCTOS -->
+					<div class="table-row">
+						<div class="table-col table-col-item">[item]</div>
+						<div class="table-col table-col-number table-border">&nbsp;&nbsp;[numerooe]</div>
+						<div class="table-col table-col-name">&nbsp;&nbsp;[producto]</div>
+						<div class="table-col table-col-count table-border-left">&nbsp;[cantidad]</div>
+					</div>
+					<!-- END PRODUCTOS -->
+					<div class="table-row-footer">
+						<div class="table-col table-col-item">&nbsp;</div>
+						<div class="table-col table-col-number table-border">&nbsp;</div>
+						<div class="table-col table-col-name">&nbsp;</div>
+						<div class="table-col table-col-count table-border-left">&nbsp;</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</body>
+</html>

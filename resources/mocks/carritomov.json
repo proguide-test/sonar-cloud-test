@@ -1,0 +1,28 @@
+[
+  {
+    "_id": "618bc5e16df8b300446965f2",
+    "idcarrito": "6170a516998cae00443958da",
+    "idproducto": "623c83af52c0a7002e5f76cd",
+    "idproveedor": "6157516e6dfc3c2183b2671d",
+    "usuario": "mborgo",
+    "preciounitario": "80",
+    "diasproduccion": "20",
+    "createdAt": "2021-11-10 10:15:13",
+    "updatedAt": "2021-11-10 10:15:13",
+    "__v": 0,
+    "id": "618bc5e16df8b300446965f2"
+  },
+  {
+    "_id": "618bc5e16df8b300446965f4",
+    "idcarrito": "6170a516998cae00443958da",
+    "idproducto": "623c83af52c0a7002e5f76cd",
+    "idproveedor": "6157516e6dfc3c2183b2671d",
+    "usuario": "mborgo",
+    "preciounitario": "6000",
+    "diasproduccion": "190",
+    "createdAt": "2021-11-10 10:15:13",
+    "updatedAt": "2021-11-10 10:15:13",
+    "__v": 0,
+    "id": "618bc5e16df8b300446965f4"
+  }
+]

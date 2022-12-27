@@ -1,0 +1,72 @@
+[
+  {
+    "_id": "6169cf06b75042219786f26a",
+    "regionid": "1",
+    "id": "112166",
+    "name": "PALCO DIST. BELGRANO SRL",
+    "direccion": "Salta 702"
+  },
+  {
+    "_id": "6169cf06b75042219786f270",
+    "regionid": "1",
+    "id": "135905",
+    "name": "BECCACECE HNOS.SA",
+    "direccion": "Belisario Roldan 2401"
+  },
+  {
+    "_id": "6169cf06b75042219786f276",
+    "regionid": "1",
+    "id": "173253",
+    "name": "DISTRIBUIDORA PRIMERO DE SEPTIEMBRE S.R.L.",
+    "direccion": "Juan Manuel de Rosas 4858"
+  },
+  {
+    "_id": "6169cf07b75042219786f27c",
+    "regionid": "1",
+    "id": "403492",
+    "name": "AGUANORT SRL",
+    "direccion": "Av.Marquez 1375"
+  },
+  {
+    "_id": "6169cf07b75042219786f282",
+    "regionid": "1",
+    "id": "310069",
+    "name": "MARADEI GLORIA",
+    "direccion": "Ruta 8 Km 110"
+  },
+  {
+    "_id": "6169cf07b75042219786f288",
+    "regionid": "1",
+    "id": "136164",
+    "name": "DISTRIB.REGIONAL S.R.L.",
+    "direccion": ""
+  },
+  {
+    "_id": "6169cf07b75042219786f28e",
+    "regionid": "1",
+    "id": "88456",
+    "name": "SURALNOR S.R.L.",
+    "direccion": ""
+  },
+  {
+    "_id": "6169cf07b75042219786f294",
+    "regionid": "1",
+    "id": "181652",
+    "name": "EMCALA S.R.L.",
+    "direccion": "Constituyentes 2270 Ruta 26 e/ Salas y Ravignani"
+  },
+  {
+    "_id": "6169cf07b75042219786f29a",
+    "regionid": "1",
+    "id": "90356",
+    "name": "DISTRIBUIDORA REL SRL",
+    "direccion": "Av. San Martín 4891"
+  },
+  {
+    "_id": "6169cf07b75042219786f2a0",
+    "regionid": "1",
+    "id": "135901",
+    "name": "OESTE CENTRO DISTRIBUCION S.A.",
+    "direccion": "Eva Perón 4126"
+  }
+]

@@ -1,0 +1,46 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: shopping-back-end
+  labels:
+    proyecto: SAZ_Bolt
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: bolt
+  template:
+    metadata:
+      labels:
+        app: bolt
+        proyecto: SAZ_Bolt
+    spec:
+      containers:
+      - image: {{REGISTRY}}/shopping-back-end:{{TAG}}
+        name: shopping-back-end
+        imagePullPolicy: Always        
+        env:
+        - name: DBURL
+          value: "{{DBAPI}}"
+        - name: NOTIFICATIONURL
+          value: "{{NOAPI}}"
+        - name: UM_HOST_PORT
+          value: "{{USAPI}}"
+        - name: PROXY_URL
+          value: "none"
+        - name: SAP_RECEPCION_ENABLED
+          value: "0"
+        - name: SAP_RESERVA_ENABLED
+          value: "0"
+        - name: SAP_CONSULTA_ENABLED
+          value: "0"
+        resources:
+          requests:
+            memory: "1Gi"
+            cpu: "1"
+          limits:
+            memory: "2Gi"
+            cpu: "2"
+        ports:
+        - name: sho-port
+          containerPort: 4001

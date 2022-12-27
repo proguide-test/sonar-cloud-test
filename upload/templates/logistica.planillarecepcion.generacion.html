@@ -1,0 +1,58 @@
+<html>
+<head>
+    [STYLE]
+</head>
+<body>
+    <div class="title" style="display: {{USUARIODISPLAY}}">
+        <div style="display: {{MULTIPLE}}">
+            <b>{{USUARIO}}</b>
+            <span>, se despacharon los siguientes materiales:</span> 
+        </div>
+        <div style="display: {{SIMPLE}}">
+            <b>{{USUARIO}}</b>
+            <span>, se despacharon materiales desde <b>{{ORIGEN}}</b> a <b>{{DESTINO}}</b>:</span> 
+        </div>
+    </div>
+    
+    <div style="margin-top: 50px; display: {{MULTIPLE}}">
+        <span>De <b>{{ORIGEN}}</b> a <b>{{DESTINO}}</b>:</span> 
+    </div>
+
+    <div class="button">
+        <a href="{{LINK}}">VER PLANILLA RECEPCIÓN</a>        
+    </div>
+    
+    <table class="table">
+        <tr>
+            <td colspan="5">
+                <div class="table-title">
+                    <b>Planilla de despacho N°</b>:&nbsp;{{NUMBERIDPD}}&nbsp;
+                    <b>Planilla de recepción N°</b>:&nbsp;{{NUMBERID}}&nbsp;
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="table-header">Plan</td>
+            <td class="table-header">N° OE</td>
+            <td class="table-header">N° Pallet</td>
+            <td class="table-header">Material</td>
+            <td class="table-header align-right">Enviado</td>
+        </tr>
+
+        <!-- BEGIN PRODUCTOS -->
+        <tr>
+            <td class="table-body">{{PLAN}}</td>
+            <td class="table-body">{{NROORDENTRANSPORTE}}</td>
+            <td class="table-body">{{NROPALLET}}</td>
+            <td class="table-body">{{PRODUCTO}}</td>
+            <td class="table-body align-right">{{CANTIDAD}}</td>
+        </tr>
+        <!-- END PRODUCTOS -->
+    </table>
+    
+    <div style="display: {{FOOTERDISPLAY}}">
+        [FOOTER]
+    </div>
+</body>
+</html>

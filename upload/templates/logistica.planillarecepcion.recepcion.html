@@ -1,0 +1,62 @@
+<html>
+<head>
+    [STYLE]
+</head>
+<body>
+    <div class="title" style="display: {{USUARIODISPLAY}}">
+        <div style="display: {{MULTIPLE}}">
+            <b>{{USUARIO}}</b>
+            <span>, los materiales enviados fueron recibidos por:</span> 
+        </div>
+        <div style="display: {{SIMPLE}}">
+            <b>{{USUARIO}}</b>
+            <span>, los materiales enviados a <b>{{DESTINO}}</b> fueron recibidos:</span> 
+        </div>
+    </div>
+    
+    <div style="margin-top: 50px; display: {{MULTIPLE}}">
+        <span>- <b>{{DESTINO}}</b>:</span> 
+    </div>
+
+    <div class="button">
+        <a href="{{LINK}}">VER PLANILLA RECEPCIÓN</a>        
+    </div>
+    
+    <table class="table">
+        <tr>
+            <td colspan="7">
+                <div class="table-title">
+                    <b>Planilla de despacho N°</b>:&nbsp;{{NUMBERIDPD}}&nbsp;
+                    <b>Planilla de recepción N°</b>:&nbsp;{{NUMBERID}}&nbsp;
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="table-header">N° OE</td>
+            <td class="table-header">N° Pallet</td>
+            <td class="table-header">Material</td>
+            <td class="table-header align-right">Enviado</td>
+            <td class="table-header align-right">Recibido</td>
+            <td class="table-header align-right">Diferencia</td>
+            <td class="table-header">Motivo</td>
+        </tr>
+
+        <!-- BEGIN PRODUCTOS -->
+        <tr>
+            <td class="table-body">{{NROORDENTRANSPORTE}}</td>
+            <td class="table-body">{{NROPALLET}}</td>
+            <td class="table-body">{{PRODUCTO}}</td>
+            <td class="table-body align-right">{{CANTIDAD}}</td>
+            <td class="table-body align-right">{{CANTIDADRECIBIDA}}</td>
+            <td class="table-body align-right">{{DIFERENCIA}}</td>
+            <td class="table-body">{{MOTIVO}}</td>
+        </tr>
+        <!-- END PRODUCTOS -->
+    </table>
+    
+    <div style="display: {{FOOTERDISPLAY}}">
+        [FOOTER]
+    </div>
+</body>
+</html>

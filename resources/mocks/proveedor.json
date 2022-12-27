@@ -1,0 +1,25 @@
+[
+  {
+    "_id": "6157516e6dfc3c2183b2671d",
+    "codigosap": "1",
+    "name": "Proveedor II",
+    "domicilio": "Congreso de Tucuman 79",
+    "enabled": true,
+    "materialidadid": [
+      "1"
+    ],
+    "emailc": "mborgo@proguidemc.com",
+    "razonsocial": "Cía. Arg. De Merchandising SA",
+    "telefonoe": "4104-4600",
+    "domicilioe": "Chiclana 102",
+    "localidadide": "La Tablada",
+    "provinciaide": "Buenos Aires",
+    "tipomaterialid": "1",
+    "namec": "Gabriel Cores ",
+    "telefonoc": "15-6479-0728 ",
+    "createdAt": "2021-10-04 16:29:45",
+    "updatedAt": "2021-10-04 16:29:58",
+    "__v": 0,
+    "id": "6157516e6dfc3c2183b2671d"
+  }
+]

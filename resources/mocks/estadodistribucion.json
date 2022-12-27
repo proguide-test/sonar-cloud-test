@@ -1,0 +1,27 @@
+[
+  {
+    "_id": "61423662ae5051c9bc589d2e",
+    "id": "PD",
+    "name": "Pendiente de Asignacion"
+  },
+  {
+    "_id": "61423662ae5051c9bc589d34",
+    "id": "EN",
+    "name": "Enviada"
+  },
+  {
+    "_id": "61423662ae5051c9bc589d3a",
+    "id": "RE",
+    "name": "Recibida"
+  },
+  {
+    "_id": "61423662ae5051c9bc589d40",
+    "id": "PA",
+    "name": "Pendiente de Ajuste"
+  },
+  {
+    "_id": "61423662ae5051c9bc589d46",
+    "id": "AC",
+    "name": "Aceptada"
+  }
+]

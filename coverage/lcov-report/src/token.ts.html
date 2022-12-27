@@ -1,0 +1,322 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for src/token.ts</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">src</a> token.ts</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">33.33% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>12/36</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>0/12</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">11.11% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>1/9</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">22.58% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>7/31</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input oninput="onInput()" type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line low'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a>
+<a name='L9'></a><a href='#L9'>9</a>
+<a name='L10'></a><a href='#L10'>10</a>
+<a name='L11'></a><a href='#L11'>11</a>
+<a name='L12'></a><a href='#L12'>12</a>
+<a name='L13'></a><a href='#L13'>13</a>
+<a name='L14'></a><a href='#L14'>14</a>
+<a name='L15'></a><a href='#L15'>15</a>
+<a name='L16'></a><a href='#L16'>16</a>
+<a name='L17'></a><a href='#L17'>17</a>
+<a name='L18'></a><a href='#L18'>18</a>
+<a name='L19'></a><a href='#L19'>19</a>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a>
+<a name='L41'></a><a href='#L41'>41</a>
+<a name='L42'></a><a href='#L42'>42</a>
+<a name='L43'></a><a href='#L43'>43</a>
+<a name='L44'></a><a href='#L44'>44</a>
+<a name='L45'></a><a href='#L45'>45</a>
+<a name='L46'></a><a href='#L46'>46</a>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a>
+<a name='L51'></a><a href='#L51'>51</a>
+<a name='L52'></a><a href='#L52'>52</a>
+<a name='L53'></a><a href='#L53'>53</a>
+<a name='L54'></a><a href='#L54'>54</a>
+<a name='L55'></a><a href='#L55'>55</a>
+<a name='L56'></a><a href='#L56'>56</a>
+<a name='L57'></a><a href='#L57'>57</a>
+<a name='L58'></a><a href='#L58'>58</a>
+<a name='L59'></a><a href='#L59'>59</a>
+<a name='L60'></a><a href='#L60'>60</a>
+<a name='L61'></a><a href='#L61'>61</a>
+<a name='L62'></a><a href='#L62'>62</a>
+<a name='L63'></a><a href='#L63'>63</a>
+<a name='L64'></a><a href='#L64'>64</a>
+<a name='L65'></a><a href='#L65'>65</a>
+<a name='L66'></a><a href='#L66'>66</a>
+<a name='L67'></a><a href='#L67'>67</a>
+<a name='L68'></a><a href='#L68'>68</a>
+<a name='L69'></a><a href='#L69'>69</a>
+<a name='L70'></a><a href='#L70'>70</a>
+<a name='L71'></a><a href='#L71'>71</a>
+<a name='L72'></a><a href='#L72'>72</a>
+<a name='L73'></a><a href='#L73'>73</a>
+<a name='L74'></a><a href='#L74'>74</a>
+<a name='L75'></a><a href='#L75'>75</a>
+<a name='L76'></a><a href='#L76'>76</a>
+<a name='L77'></a><a href='#L77'>77</a>
+<a name='L78'></a><a href='#L78'>78</a>
+<a name='L79'></a><a href='#L79'>79</a>
+<a name='L80'></a><a href='#L80'>80</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">export const getToken = (): string =&gt; {
+  return `eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MDE4MDNhMTNkYjQ5MDAwNDM3MzU2NjgiLCJ1c2VybmFtZSI6Im1ib3JnbyIsInJvbGVzIjpbeyJhcHBJZCI6IjVlNzI2ZDg1MDk2NTg3MDAzMGE1Nzk1NiIsImFwcE5hbWUiOiJtb2R1bG9icG0iLCJwZXJtaXNzaW9ucyI6W3siZWxlbWVudCI6eyJuYW1lIjoiVG9kb3MgbG9zIEVsZW1lbnRvcyJ9LCJjb21wb25lbnRJZCI6IjVlNzI2ZDg1MDk2NTg3MDAzMGE1Nzk1NyIsInBlcm1pc3Npb24iOnRydWUsImNvbXBvbmVudE5hbWUiOiJUb2RvcyBsb3MgQ29tcG9uZW50ZXMifV0sInJvbGUiOiJCUE0gQWRtaW4iLCJjcmVhdGVkQXQiOiIyMDIwLTAzLTA0VDEzOjUyOjA4LjA3MCswMzAwIiwiaWQiOiI1ZTcyNmQ4NTQ0N2U5OTAwNDRkNTAzYzYiLCJ1cGRhdGVkQXQiOiIyMDIwLTAzLTA0VDEzOjUyOjA4LjA3MSswMzAwIn0seyJhcHBJZCI6IjVlYWI4MGE1NzVjYjQwODc2MWMzNzI4ZiIsImFwcE5hbWUiOiJtb2R1bG9hZG1pbiIsInBlcm1pc3Npb25zIjpbeyJlbGVtZW50Ijp7Im5hbWUiOiJUb2RvcyBsb3MgZWxlbWVudG9zIn0sImNvbXBvbmVudElkIjoiNWVhYjgwZmU3NWNiNDA4NzYxYzM3MzkyIiwicGVybWlzc2lvbiI6dHJ1ZSwiY29tcG9uZW50TmFtZSI6IlRvZG9zIGxvcyBDb21wb25lbnRlcyJ9LHsiZWxlbWVudCI6eyJuYW1lIjoiQ29uZmlndXJhciBtYW51YWwifSwiY29tcG9uZW50SWQiOiI2MjBlNzdmODg2MjY0MGI0MmQ0NTlkMjciLCJwZXJtaXNzaW9uIjp0cnVlLCJjb21wb25lbnROYW1lIjoiT3BjaW9uZXMifV0sInJvbGUiOiJBZG1pbmlzdHJhdG9yIEFkbWluIiwiY3JlYXRlZEF0IjoiMjAyMC0wNC0yNFQxNTo0Mjo1My43MDUrMDMwMCIsImlkIjoiNWVhYjgxNTA3NWNiNDA4NzYxYzM3NDViIiwidXBkYXRlZEF0IjoiMjAyMC0wNC0yNFQxNTo0Mjo1My43MDUrMDMwMCJ9LHsiYXBwSWQiOiI1ZWFiODJiMjVkZGJiYTAwMmUxODRkYzQiLCJhcHBOYW1lIjoibW9kdWxvZGFzaGJvYXJkIiwicGVybWlzc2lvbnMiOlt7ImVsZW1lbnQiOnsibmFtZSI6IlRvZG9zIGxvcyBlbGVtZW50b3MifSwiY29tcG9uZW50SWQiOiI1ZWFiODJiMjVkZGJiYTAwMmUxODRkYzUiLCJwZXJtaXNzaW9uIjp0cnVlLCJjb21wb25lbnROYW1lIjoiVG9kb3MgbG9zIENvbXBvbmVudGVzIn0seyJlbGVtZW50Ijp7Im5hbWUiOiJQb3JjZW50YWplcyJ9LCJjb21wb25lbnRJZCI6IjYxYmJhMWQ2MjdkMWQwMTI2YjVmNzVmMCIsInBlcm1pc3Npb24iOnRydWUsImNvbXBvbmVudE5hbWUiOiJDb25maWd1cmFjaW9uZXMifSx7ImVsZW1lbnQiOnsibmFtZSI6IlJlc3RhdXJhciJ9LCJjb21wb25lbnRJZCI6IjYxYmJhMWQ2MjdkMWQwMTI2YjVmNzVmMCIsInBlcm1pc3Npb24iOnRydWUsImNvbXBvbmVudE5hbWUiOiJDb25maWd1cmFjaW9uZXMifV0sInJvbGUiOiJEYXNoYm9hcmQgQWRtaW4iLCJjcmVhdGVkQXQiOiIyMDIwLTA1LTAxVDAwOjM4OjM0LjE5MiswMzAwIiwiaWQiOiI1ZWFiODJiMjEyMzE0NTAwNDM3ZWUwOTkiLCJ1cGRhdGVkQXQiOiIyMDIwLTA1LTAxVDAwOjM4OjM0LjE5MyswMzAwIn0seyJhcHBJZCI6IjVlZDgwMjBhNWRkYmJhMDAyZTE4NGRjNyIsImFwcE5hbWUiOiJtb2R1bG9ldmVudG9zIiwicGVybWlzc2lvbnMiOlt7ImVsZW1lbnQiOnsibmFtZSI6IlRvZG9zIGxvcyBlbGVtZW50b3MifSwiY29tcG9uZW50SWQiOiI1ZWQ4MDIwYjVkZGJiYTAwMmUxODRkYzgiLCJwZXJtaXNzaW9uIjp0cnVlLCJjb21wb25lbnROYW1lIjoiVG9kb3MgbG9zIENvbXBvbmVudGVzIn1dLCJyb2xlIjoiRXZlbnRvcyBBZG1pbiIsImNyZWF0ZWRBdCI6IjIwMjAtMDYtMDNUMTk6MDM6MTkuMDc4KzAzMDAiLCJpZCI6IjVlZDgwMjBiMDVjZWI5MDA0M2Y5MTViNyIsInVwZGF0ZWRBdCI6IjIwMjAtMDYtMDNUMTk6MDM6MTkuMDc5KzAzMDAifSx7ImFwcElkIjoiNWYzM2Y5NjkxNzE0YTIwMDM4NjQ4YTUxIiwiYXBwTmFtZSI6Im1vZHVsb2VuY3Vlc3RhcyIsInBlcm1pc3Npb25zIjpbeyJlbGVtZW50Ijp7Im5hbWUiOiJUb2RvcyBsb3MgZWxlbWVudG9zIn0sImNvbXBvbmVudElkIjoiNWYzM2Y5NjkxNzE0YTIwMDM4NjQ4YTUyIiwicGVybWlzc2lvbiI6dHJ1ZSwiY29tcG9uZW50TmFtZSI6IlRvZG9zIGxvcyBDb21wb25lbnRlcyJ9XSwicm9sZSI6IlN1cnZleSBBZG1pbiIsImNyZWF0ZWRBdCI6IjIwMjAtMDgtMTFUMTM6MDQ6MTYuMTgxKzAzMDAiLCJpZCI6IjVmMzNmOTY5MjY1MzQ1MDA0NDRmNzMyOSIsInVwZGF0ZWRBdCI6IjIwMjAtMDgtMTFUMTM6MDQ6MTYuMTgyKzAzMDAifSx7ImFwcElkIjoiNWYzM2Y5OTExNzE0YTIwMDM4NjQ4YTUzIiwiYXBwTmFtZSI6Im1vZHVsb2VudGlkYWRlcyIsInBlcm1pc3Npb25zIjpbeyJlbGVtZW50Ijp7Im5hbWUiOiJUb2RvcyBsb3MgZWxlbWVudG9zIn0sImNvbXBvbmVudElkIjoiNWYzM2Y5OTExNzE0YTIwMDM4NjQ4YTU0IiwicGVybWlzc2lvbiI6dHJ1ZSwiY29tcG9uZW50TmFtZSI6IlRvZG9zIGxvcyBDb21wb25lbnRlcyJ9XSwicm9sZSI6IkVudGl0eSBBZG1pbiIsImNyZWF0ZWRBdCI6IjIwMjAtMDgtMTFUMTM6MDQ6MTYuMTgxKzAzMDAiLCJpZCI6IjVmMzNmOTkxMjY1MzQ1MDA0NDRmNzMyYiIsInVwZGF0ZWRBdCI6IjIwMjAtMDgtMTFUMTM6MDQ6MTYuMTgyKzAzMDAifSx7ImFwcElkIjoiNjAxODBjYmRkNmExYjAwMDJlOTc4MjM1IiwiYXBwTmFtZSI6Im1vZHVsb2FjdGl2aWRhZGVzIiwicGVybWlzc2lvbnMiOlt7ImVsZW1lbnQiOnsibmFtZSI6IlRvZG9zIGxvcyBlbGVtZW50b3MifSwiY29tcG9uZW50SWQiOiI2MDE4MGNiZWQ2YTFiMDAwMmU5NzgyMzYiLCJwZXJtaXNzaW9uIjp0cnVlLCJjb21wb25lbnROYW1lIjoiVG9kb3MgbG9zIENvbXBvbmVudGVzIn1dLCJyb2xlIjoiQWN0aXZpdHkgQWRtaW4iLCJjcmVhdGVkQXQiOiIyMDIxLTAxLTI5VDE0OjI3OjQ3LjUzNiswMzAwIiwiaWQiOiI2MDE4MGNiZTNkYjQ5MDAwNDM3MzU3OGQiLCJ1cGRhdGVkQXQiOiIyMDIxLTAxLTI5VDE0OjI3OjQ3LjUzNyswMzAwIn0seyJhcHBJZCI6IjYwMTgwY2QwZDZhMWIwMDAyZTk3ODIzNyIsImFwcE5hbWUiOiJtb2R1bG9jb25mZXJlbmNpYSIsInBlcm1pc3Npb25zIjpbeyJlbGVtZW50Ijp7Im5hbWUiOiJUb2RvcyBsb3MgZWxlbWVudG9zIn0sImNvbXBvbmVudElkIjoiNjAxODBjZDBkNmExYjAwMDJlOTc4MjM4IiwicGVybWlzc2lvbiI6dHJ1ZSwiY29tcG9uZW50TmFtZSI6IlRvZG9zIGxvcyBDb21wb25lbnRlcyJ9XSwicm9sZSI6Ik1lZXRpbmcgQWRtaW4iLCJjcmVhdGVkQXQiOiIyMDIxLTAxLTI5VDE0OjI3OjQ3LjUzNiswMzAwIiwiaWQiOiI2MDE4MGNkMDNkYjQ5MDAwNDM3MzU3OTgiLCJ1cGRhdGVkQXQiOiIyMDIxLTAxLTI5VDE0OjI3OjQ3LjUzNyswMzAwIn0seyJhcHBJZCI6IjYxMjY0MmRkODJlZmNlOGI4M2UyOWNjMSIsImFwcE5hbWUiOiJtb2R1bG9jb21wcmFzIiwicGVybWlzc2lvbnMiOlt7ImVsZW1lbnQiOnsibmFtZSI6IlRvZG9zIGxvcyBFbGVtZW50b3MifSwiY29tcG9uZW50SWQiOiI2MjMzYTQ3ZDVjMjVkZDc4NTRmMWZhYjYiLCJwZXJtaXNzaW9uIjp0cnVlLCJjb21wb25lbnROYW1lIjoiVG9kb3MgbG9zIENvbXBvbmVudGVzIn1dLCJyb2xlIjoiQ29tcHJhcyBBZG1pbiIsImNyZWF0ZWRBdCI6IjIwMjEtMDgtMjRUMTQ6MzA6MTMuMTI1KzAzMDAiLCJpZCI6IjYxMjY0NTI2YzI5M2ZmMDA0NGU4N2YyYSIsInVwZGF0ZWRBdCI6IjIwMjItMDUtMTdUMTg6MjE6NTkuMjgzKzAzMDAifSx7ImFwcElkIjoiNjIwMTYwN2U4NjI2NDBiNDJkMTg0ZTkwIiwiYXBwTmFtZSI6Im1vZHVsb3Bva2VyIiwicGVybWlzc2lvbnMiOlt7ImVsZW1lbnQiOnsibmFtZSI6IlRvZG9zIGxvcyBFbGVtZW50b3MifSwiY29tcG9uZW50SWQiOiI2MjAxNjIwNjg2MjY0MGI0MmQxODU1ODQiLCJwZXJtaXNzaW9uIjp0cnVlLCJjb21wb25lbnROYW1lIjoiVG9kb3MgbG9zIENvbXBvbmVudGVzIn1dLCJyb2xlIjoiR2FtYml0byIsImNyZWF0ZWRBdCI6IjIwMjAtMDMtMDRUMTM6NTI6MDguMDcwKzAzMDAiLCJpZCI6IjYyMDE2MWUzODYyNjQwYjQyZDE4NTUwMiIsInVwZGF0ZWRBdCI6IjIwMjAtMDMtMDRUMTM6NTI6MDguMDcxKzAzMDAifSx7ImFwcElkIjoiNjI3MDRkNTUxYTVkNzM3ZGE1OTU4NjA4IiwiYXBwTmFtZSI6Im1vZHVsb21vbml0b3IiLCJwZXJtaXNzaW9ucyI6W3siZWxlbWVudCI6eyJuYW1lIjoiVG9kb3MgbG9zIEVsZW1lbnRvcyJ9LCJjb21wb25lbnRJZCI6IjYyNzA0ZTEwMWE1ZDczN2RhNTk1ODljOSIsInBlcm1pc3Npb24iOnRydWUsImNvbXBvbmVudE5hbWUiOiJUb2RvcyBsb3MgQ29tcG9uZW50ZXMifV0sInJvbGUiOiJNb25pdG9yIEFkbWluIiwiY3JlYXRlZEF0IjoiMjAyMi0wNC0yNVQxNDowNTowNC43ODYrMDMwMCIsImlkIjoiNjI3MDRlMzExYTVkNzM3ZGE1OTU4YTZlIiwidXBkYXRlZEF0IjoiMjAyMi0wNC0yNVQxNDowNTowNC43ODYrMDMwMCJ9XSwiaWF0IjoxNjU1NDgwNDg2LCJleHAiOjE5NzA4NDA0ODZ9.WL7G2JM5hIuEAxk_1o-fGoW657sAoDQLYHaN_vmSsnUrcczSZ9O1wGkKDqK15-PCn3qCv_yX3GZuTV0-7bFC8v3_NFykYlCNmE81-M4a4DPuWenKKbKt-Ir4hKJe-qFNZz-MVwHl2-y2tsMx7u2kmFPDp4wR1fA18oWPauKmaQo`
+}
+import request from 'supertest';
+import { INestApplication } from '@nestjs/common';
+&nbsp;
+export interface TestEndpoint {
+  name: string,
+  function: (done: any) =&gt; void,
+}
+&nbsp;
+export type FunctionTestApp = () =&gt; INestApplication;
+&nbsp;
+export const basicget = <span class="fstat-no" title="function not covered" >(o</span>nApp: FunctionTestApp, done1: any, url: string, _body: any = <span class="branch-0 cbranch-no" title="branch not covered" >{})</span> =&gt; {
+  const token = <span class="cstat-no" title="statement not covered" >getToken();</span>
+  const app = <span class="cstat-no" title="statement not covered" >onApp();</span>
+<span class="cstat-no" title="statement not covered" >  request(app.getHttpServer())</span>
+  .get(url)
+  .set('Authorization', 'Bearer '+token)
+  // .expect(200)
+  .end(<span class="fstat-no" title="function not covered" >(e</span>rr: any, _response: any) =&gt; {
+<span class="cstat-no" title="statement not covered" >      if (err) {</span>
+<span class="cstat-no" title="statement not covered" >          done1(err);</span>
+      } else {
+<span class="cstat-no" title="statement not covered" >          done1();</span>
+      }
+  });
+}
+&nbsp;
+export const basicpost = <span class="fstat-no" title="function not covered" >(o</span>nApp: FunctionTestApp, done2: any, url: string, body: any = <span class="branch-0 cbranch-no" title="branch not covered" >{})</span> =&gt; {
+  const token = <span class="cstat-no" title="statement not covered" >getToken();</span>
+  const app = <span class="cstat-no" title="statement not covered" >onApp();</span>
+<span class="cstat-no" title="statement not covered" >  request(app.getHttpServer())</span>
+  .post(url)
+  .set('Authorization', 'Bearer '+token)
+  // .expect(200)
+  .send(body)
+  .end(<span class="fstat-no" title="function not covered" >(e</span>rr: any, _response: any) =&gt; {
+<span class="cstat-no" title="statement not covered" >      if (err) {</span>
+<span class="cstat-no" title="statement not covered" >          done2(err);</span>
+      } else {
+<span class="cstat-no" title="statement not covered" >          done2();</span>
+      }
+  });
+}
+&nbsp;
+export const basicput = <span class="fstat-no" title="function not covered" >(o</span>nApp: FunctionTestApp, done3: any, url: string, body: any = <span class="branch-0 cbranch-no" title="branch not covered" >{})</span> =&gt; {
+  const token = <span class="cstat-no" title="statement not covered" >getToken();</span>
+  const app = <span class="cstat-no" title="statement not covered" >onApp();</span>
+<span class="cstat-no" title="statement not covered" >  request(app.getHttpServer())</span>
+  .put(url)
+  .set('Authorization', 'Bearer '+token)
+  // .expect(200)
+  .send(body)
+  .end(<span class="fstat-no" title="function not covered" >(e</span>rr: any, _response: any) =&gt; {
+<span class="cstat-no" title="statement not covered" >      if (err) {</span>
+<span class="cstat-no" title="statement not covered" >          done3(err);</span>
+      } else {
+<span class="cstat-no" title="statement not covered" >          done3();</span>
+      }
+  });
+}
+&nbsp;
+export const basicdelete = <span class="fstat-no" title="function not covered" >(o</span>nApp: FunctionTestApp, done4: any, url: string, body: any = <span class="branch-0 cbranch-no" title="branch not covered" >{})</span> =&gt; {  
+  const token = <span class="cstat-no" title="statement not covered" >getToken();</span>
+  const app = <span class="cstat-no" title="statement not covered" >onApp();</span>
+<span class="cstat-no" title="statement not covered" >  request(app.getHttpServer())</span>
+  .delete(url)
+  .set('Authorization', 'Bearer '+token)
+  // .expect(200)
+  .send(body)
+  .end(<span class="fstat-no" title="function not covered" >(e</span>rr: any, _response: any) =&gt; {
+<span class="cstat-no" title="statement not covered" >      if (err) {</span>
+<span class="cstat-no" title="statement not covered" >          done4(err);</span>
+      } else {
+<span class="cstat-no" title="statement not covered" >          done4();</span>
+      }
+  });
+}
+&nbsp;</pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at Tue Jun 21 2022 16:10:35 GMT-0300 (hora estándar de Argentina)
+            </div>
+        <script src="../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../sorter.js"></script>
+        <script src="../block-navigation.js"></script>
+    </body>
+</html>
+    

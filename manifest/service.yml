@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: bolt-sho-service
+  labels:
+    proyecto: SAZ_Bolt
+spec:
+  type: LoadBalancer
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: sho-port
+  selector:
+    app: bolt

@@ -1,0 +1,102 @@
+[
+  {
+    "_id": "616f087a998cae0044386b46",
+    "codigosap": "AR11",
+    "name": "CERV.Y MALTERIA QUILMES",
+    "enabled": true,
+    "createdAt": "2021-10-19 15:03:38",
+    "updatedAt": "2021-10-19 15:03:38",
+    "__v": 0,
+    "id": "616f087a998cae0044386b46"
+  },
+  {
+    "_id": "616f087a998cae0044386b47",
+    "codigosap": "AR12",
+    "name": "AR12",
+    "enabled": true,
+    "createdAt": "2021-10-19 15:03:38",
+    "updatedAt": "2021-10-19 15:03:38",
+    "__v": 0,
+    "id": "616f087a998cae0044386b47"
+  },
+  {
+    "_id": "616f087a998cae0044386b48",
+    "codigosap": "AR13",
+    "name": "AR13",
+    "enabled": true,
+    "createdAt": "2021-10-19 15:03:38",
+    "updatedAt": "2021-10-19 15:03:38",
+    "__v": 0,
+    "id": "616f087a998cae0044386b48"
+  },
+  {
+    "_id": "616f087a998cae0044386b49",
+    "codigosap": "AR14",
+    "name": "AR14",
+    "enabled": true,
+    "createdAt": "2021-10-19 15:03:38",
+    "updatedAt": "2021-10-19 15:03:38",
+    "__v": 0,
+    "id": "616f087a998cae0044386b49"
+  },
+  {
+    "_id": "616f087a998cae0044386b4a",
+    "codigosap": "AR15",
+    "name": "AR15",
+    "enabled": true,
+    "createdAt": "2021-10-19 15:03:38",
+    "updatedAt": "2021-10-19 15:03:38",
+    "__v": 0,
+    "id": "616f087a998cae0044386b4a"
+  },
+  {
+    "_id": "616f087a998cae0044386b4b",
+    "codigosap": "AR21",
+    "name": "AR21",
+    "enabled": true,
+    "createdAt": "2021-10-19 15:03:38",
+    "updatedAt": "2021-10-19 15:03:38",
+    "__v": 0,
+    "id": "616f087a998cae0044386b4b"
+  },
+  {
+    "_id": "616f087a998cae0044386b4c",
+    "codigosap": "AR22",
+    "name": "AR22",
+    "enabled": true,
+    "createdAt": "2021-10-19 15:03:38",
+    "updatedAt": "2021-10-19 15:03:38",
+    "__v": 0,
+    "id": "616f087a998cae0044386b4c"
+  },
+  {
+    "_id": "616f087a998cae0044386b4e",
+    "codigosap": "CL11",
+    "name": "CL11",
+    "enabled": true,
+    "createdAt": "2021-10-19 15:03:38",
+    "updatedAt": "2021-10-19 15:03:38",
+    "__v": 0,
+    "id": "616f087a998cae0044386b4e"
+  },
+  {
+    "_id": "616f087a998cae0044386b4d",
+    "codigosap": "BO11",
+    "name": "BO11",
+    "enabled": true,
+    "createdAt": "2021-10-19 15:03:38",
+    "updatedAt": "2021-10-19 15:03:38",
+    "__v": 0,
+    "id": "616f087a998cae0044386b4d"
+  },
+  {
+    "_id": "616f087a998cae0044386b50",
+    "codigosap": "PY12",
+    "name": "PY12",
+    "enabled": true,
+    "createdAt": "2021-10-19 15:03:38",
+    "updatedAt": "2021-10-19 15:03:38",
+    "__v": 0,
+    "id": "616f087a998cae0044386b50"
+  }
+]

@@ -1,0 +1,36 @@
+[
+  {
+    "_id": "623c83af52c0a7002e5f76cd",
+    "marca": "1",
+    "tipomaterial": "1",
+    "name": "Movies Awafrut - Pomelo Ballotage",
+    "centros": "",
+    "codigotruck": "1",
+    "estado": "ACTIVO",
+    "grupo": "1",
+    "negocio": "1",
+    "codigosap": "1",
+    "numberid": "1",
+    "createdAt": "2022-03-24 11:44:01",
+    "updatedAt": "2022-03-24 11:44:01",
+    "__v": 0,
+    "id": "623c83af52c0a7002e5f76cd"
+  },
+  {
+    "_id": "623c83af52c0a7002e5f76cb",
+    "marca": "1",
+    "tipomaterial": "1",
+    "name": "CUBREPUNTERA PEPSI LATERALES AS",
+    "centros": "",
+    "codigotruck": "2",
+    "estado": "ACTIVO",
+    "grupo": "1",
+    "negocio": "1",
+    "codigosap": "2",
+    "numberid": "2",
+    "createdAt": "2022-03-24 11:44:01",
+    "updatedAt": "2022-03-24 11:44:01",
+    "__v": 0,
+    "id": "623c83af52c0a7002e5f76cb"
+  }
+]

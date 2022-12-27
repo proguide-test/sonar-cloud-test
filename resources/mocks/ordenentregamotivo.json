@@ -1,0 +1,38 @@
+[
+  {
+    "_id": "61bba5e127d1d0126b5f9acc",
+    "id": "condiferencias",
+    "name": "Recibido con diferencias",
+    "enabled": true,
+    "createdAt": "2021-12-16 15:30:14",
+    "updatedAt": "2021-12-16 15:30:14",
+    "__v": 0
+  },
+  {
+    "_id": "61bba5e127d1d0126b5f9ad5",
+    "id": "rotura",
+    "name": "Rotura",
+    "enabled": true,
+    "createdAt": "2021-12-16 15:30:14",
+    "updatedAt": "2021-12-16 15:30:14",
+    "__v": 0
+  },
+  {
+    "_id": "61bba5e127d1d0126b5f9add",
+    "id": "perdida",
+    "name": "Pérdida",
+    "enabled": true,
+    "createdAt": "2021-12-16 15:30:14",
+    "updatedAt": "2021-12-16 15:30:14",
+    "__v": 0
+  },
+  {
+    "_id": "61bba5e127d1d0126b5f9ae5",
+    "id": "devolucion",
+    "name": "Devolución",
+    "enabled": true,
+    "createdAt": "2021-12-16 15:30:14",
+    "updatedAt": "2021-12-16 15:30:14",
+    "__v": 0
+  }
+]

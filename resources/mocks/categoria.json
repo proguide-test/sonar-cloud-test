@@ -1,0 +1,51 @@
+[
+  {
+    "_id": "61376ee939824a1aecf1d2e4",
+    "id": "1",
+    "name": "Rack",
+    "image": "{app}/upload/categorias/rack.png",
+    "enabled": true
+  },
+  {
+    "_id": "61376eff39824a1aecf1d37a",
+    "id": "2",
+    "name": "Sombrilla",
+    "image": "{app}/upload/categorias/sombrilla.png",
+    "enabled": true
+  },
+  {
+    "_id": "61376f0c39824a1aecf1d3c4",
+    "id": "3",
+    "name": "Mesa",
+    "image": "{app}/upload/categorias/mesa.png",
+    "enabled": true
+  },
+  {
+    "_id": "6137740ddec2c319f21669dd",
+    "id": "4",
+    "name": "Silla",
+    "image": "{app}/upload/categorias/silla.png",
+    "enabled": true
+  },
+  {
+    "_id": "6137741fdec2c319f21669de",
+    "id": "5",
+    "name": "Gazebos",
+    "image": "{app}/upload/categorias/gazebo.png",
+    "enabled": true
+  },
+  {
+    "_id": "61377432dec2c319f21669df",
+    "id": "6",
+    "name": "Vasos",
+    "image": "{app}/upload/categorias/vaso.png",
+    "enabled": true
+  },
+  {
+    "_id": "61377486dec2c319f21669e0",
+    "id": "7",
+    "name": "Destapadores",
+    "image": "{app}/upload/categorias/destapador.png",
+    "enabled": true
+  }
+]

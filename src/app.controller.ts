@@ -1,4 +1,4 @@
-import { Body, Controller, Get, Post, Res } from '@nestjs/common';
+import { Body, Controller, Post, Res } from '@nestjs/common';
 import { AppService, LoginParams } from './app.service';
 import { ApiTags } from '@nestjs/swagger';
 import { HttpResponse } from '@proguidemc/http-module';
@@ -13,22 +13,16 @@ export class AppController {
     ) {}
 
     @Post('/login')
-    async saveLoad(
+    async login(
         @Body() payload: LoginParams,
         @Res() response: HttpResponse,
     ) {
         this.appService.login(payload)
         .then(info => {
-            response.status(200).send({info});
+            response.status(200).send(info);
         })
         .catch(error => {
-            response.status(200).send(error);
+            response.status(500).send(error);
         });
     }
-    
-    @Get()
-    getHello(): string {
-        return this.appService.getHello();
-    }
-
 }

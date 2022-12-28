@@ -32,7 +32,7 @@ describe('App Controller', () => {
       request(app.getHttpServer())
       .post("/login")
       .send({
-        username1: "mborgo",
+        username: "mborgo",
         password: "mborgo123"
       })
       .end((err, response) => {

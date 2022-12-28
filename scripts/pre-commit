@@ -1,6 +1,6 @@
 #!/bin/sh
 
-echo "*****Running unit tests******"
+echo "** ERROR EN LA EJECUCION DE TESTING **"
 
 git stash -q --keep-index
 

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testExecutions version="1">
-  <file path="/mnt/development/Proguide/beepmp.tools/sonar-cloud-test/src/app.controller.spec.ts">
-    <testCase name="App Controller App Controller /POST /login" duration="46"/>
-    <testCase name="App Controller App Controller /GET /" duration="3"/>
-  </file>
-</testExecutions>

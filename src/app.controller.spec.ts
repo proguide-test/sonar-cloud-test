@@ -5,7 +5,7 @@ import { AppModule } from './app.module';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { HttpModule } from '@nestjs/axios';
-import { features } from '../test/features';
+import request from "supertest";
 
 describe('App Controller', () => {
   let app: INestApplication;  
@@ -28,18 +28,25 @@ describe('App Controller', () => {
   })
 
   describe('App Controller', () => {
-    const items = features(() => {return app;});
-    items.forEach(item => {
-      const name = item.name
-      .replace("/GET", "")
-      .replace("/POST", "")
-      .replace("/PUT", "")
-      .replace("/DELETE", "")
-      .trim();
-      if (item.name.includes("test-jest") || (!name.startsWith("/product") && !name.startsWith("/cart"))) {
-        it(item.name, item.function);
-      }
-    });
+    it("login", (done) => {
+      request(app.getHttpServer())
+      .post("/login")
+      .send({
+        username: "mborgo",
+        password: "mborgo123"
+      })
+      .end((err, response) => {
+        if (response.status >= 400) {
+          return done({message: response.text});
+        }
+
+        if (err) {
+          return done(err);
+        }
+
+        done();        
+      });
+    })
   });
 
 })

@@ -10,7 +10,8 @@ export class AppService extends FlexService {
   }
 
   login(info: LoginParams): Promise<any> {
-    return new Promise(async (resolve, _reject) => {      
+    return new Promise(async (resolve, reject) => {
+      if (!info?.username || !info?.password) return reject({message: "Invalid Request"});
       resolve(info);
     });
   }

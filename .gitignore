@@ -3,3 +3,5 @@ coverage
 build
 sonar-scanner*
 test-report.xml
+
+.gitlab-ci.yml_*

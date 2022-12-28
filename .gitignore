@@ -1,5 +1,4 @@
 node_modules
-coverage
 build
 sonar-scanner*
 test-report.xml

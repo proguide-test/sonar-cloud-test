@@ -1,9 +1,8 @@
 image: node:current-alpine
 
-variables:
-  NO_PROXY: "gitlab.proguidemc.com"
-
 test:
+  variables:
+    DEBUG: true
   script:
     - npm install
     - npm run test

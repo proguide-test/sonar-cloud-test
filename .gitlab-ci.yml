@@ -4,6 +4,12 @@ test:
   script:
     - npm install
     - npm run test
+  only:
+    - master
+    - develop
+    - merge_requests
+
+upload:
   artifacts:
     paths: 
     - coverage/

@@ -33,7 +33,7 @@ describe('App Controller', () => {
       .post("/login")
       .send({
         username: "mborgo",
-        password: "mborgo123"
+        password: "mborgo"
       })
       .end((err, response) => {
         if (response.status >= 400) {

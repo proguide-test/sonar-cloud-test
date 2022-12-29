@@ -1,7 +1,7 @@
 image: node:current-alpine
 
 variables:
-  DEBUG: true
+  DEBUG: "true"
 
 test:
   script:

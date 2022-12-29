@@ -6,7 +6,7 @@ test:
     - npm run test
   artifacts:
     reports:
-      junit: test_report.xml
+      junit: test-report.xml
   only:
     - master
     - develop

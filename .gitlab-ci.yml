@@ -1,8 +1,9 @@
 image: node:current-alpine
 
+variables:
+  DEBUG: true
+
 test:
-  variables:
-    DEBUG: true
   script:
     - npm install
     - npm run test

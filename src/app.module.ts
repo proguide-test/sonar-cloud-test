@@ -6,7 +6,6 @@ import { ConfigModule, MainModule, HttpErrorFilter, DBName, AuthModule } from '@
 import { HttpModule } from '@nestjs/axios';
 import path from 'path';
 
-
 @Module({
   imports: [    
     HttpModule,

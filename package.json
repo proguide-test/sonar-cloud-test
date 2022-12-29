@@ -6,11 +6,10 @@
     "homepage": "https://www.proguidemc.com",
     "license": "MIT",
     "scripts": {
-        "prestart": "cp scripts/pre-commit .git/hooks/ && chmod +x .git/hooks/pre-commit",
         "build": "tsc -p tsconfig.build.json",
         "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
         "start": "nest start",
-        "start:dev": "npm run prestart && nest start --watch",
+        "start:dev": "nest start --watch",
         "start:prod": "node build/main.js",
         "lint": "eslint . --ext .ts",
         "test": "NODE_ENV=development jest --coverage",

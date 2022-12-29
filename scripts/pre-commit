@@ -1,7 +1,5 @@
 #!/bin/sh
 
-echo "** ERROR EN LA EJECUCION DE TESTING **"
-
 git stash -q --keep-index
 
 npm run test

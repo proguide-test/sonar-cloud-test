@@ -5,7 +5,6 @@ test:
     - npm install
     - npm run test
   artifacts:
-    ignore_failure: false
     reports:
       junit: test_report.xml
   only:

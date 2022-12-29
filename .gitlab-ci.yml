@@ -6,7 +6,7 @@ test:
     - npm run test
   artifacts:
     expose_as: 'Cobertura'
-    paths: ['coverage/lcov-report/index.html']
+    paths: ['coverage']
   only:
     - master
     - develop

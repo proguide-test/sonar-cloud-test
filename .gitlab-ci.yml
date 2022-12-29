@@ -1,15 +1,18 @@
 image: node:current-alpine
 
 variables:
-  DEBUG: "true"
+  NO_PROXY: "gitlab.proguidemc.com"
 
 test:
   script:
     - npm install
     - npm run test
   artifacts:
+    name: "cobertura"
+    reports:
+      junit: coverage/cobertura-coverage.xml
     paths: 
-     - 'coverage/lcov-report/index.html'
+     - coverage/*
   only:
     - master
     - develop

@@ -9,12 +9,8 @@ test:
     - npm run test
   artifacts:
     name: "cobertura"
-    public: false
-    expire_in: 1 week 
-    reports:
-      junit: coverage/cobertura-coverage.xml
     paths: 
-     - coverage/*
+    - manifest
   only:
     - master
     - develop

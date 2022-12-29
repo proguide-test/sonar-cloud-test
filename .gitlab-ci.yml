@@ -4,15 +4,10 @@ test:
   script:
     - npm install
     - npm run test
-  only:
-    - master
-    - develop
-    - merge_requests
-
-upload:
   artifacts:
-    paths: 
-    - coverage/
+    ignore_failure: false
+    reports:
+      junit: test_report.xml
   only:
     - master
     - develop

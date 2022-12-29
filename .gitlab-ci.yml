@@ -8,8 +8,8 @@ test:
     - npm install
     - npm run test
   artifacts:
-    expose_as: 'Cobertura'
-    paths: ['coverage']
+    paths: 
+     - 'coverage/lcov-report/index.html'
   only:
     - master
     - develop
